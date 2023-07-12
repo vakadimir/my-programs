@@ -34,7 +34,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.browser = QtWebEngineWidgets.QWebEngineView()
         page = WebEnginePage(profile, self.browser)
         self.browser.setPage(page)
-        self.browser.load(QtCore.QUrl("https://act.hoyolab.com/ys/app/interactive-map/index.html?bbs_presentation_style=no_header&utm_source=hoyolab&utm_medium=tools&utm_campaign=map&utm_id=2&lang=ru-ru&bbs_theme=light&bbs_theme_device=1#/map/2?shown_types=&center=2221.00,-1114.00&zoom=-2.00"))
+        self.browser.load(QtCore.QUrl("https://act.hoyolab.com/ys/app/interactive-map/index.html"))
         self.setCentralWidget(self.browser)
 
 if __name__ == '__main__':
